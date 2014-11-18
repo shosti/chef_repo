@@ -1,5 +1,5 @@
 name 'tdi'
-run_list ['recipe[irc]', 'recipe[git]', 'recipe[chruby::system]']
+run_list ['recipe[irc]', 'recipe[git]', 'recipe[chruby::system]', 'recipe[virtualbox]']
 default_attributes 'chruby' => {
 	'rubies' => {
 		'1.9.3-p392' => false,
